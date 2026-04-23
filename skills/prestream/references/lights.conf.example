@@ -1,0 +1,28 @@
+# Smart lights controlled by scripts/lights.sh (Elgato Key Light API)
+#
+# Format per line:  <hostname-or-ip> [brightness%] [temp_kelvin]
+#   - brightness is 0-100
+#   - temp is in Kelvin, 2900-7000 range (Elgato hardware limit)
+#   - both fields are optional; missing = use LIGHTS_BRIGHTNESS/LIGHTS_TEMP_K env
+#     vars (built-in defaults 50% / 5000K)
+#
+# Lines starting with # are comments. Blank lines ignored.
+#
+# First-time setup:
+#   bash scripts/lights.sh discover
+#
+# That scans your local network via mDNS and prints hostnames ready to paste
+# below. Copy this file to `lights.conf` (no .example) to activate.
+
+# KEY — primary light on face. Usually the one OPPOSITE any window/natural
+# light source. Brighter than the fill. Typical: 60-75% at 5000K for neutral
+# daylight, or 4500K to warm things slightly to match interior lighting.
+elgato-key-light-air-xxxx.local 65 5000
+
+# FILL — softer light on the window side (or opposite the key). Typical:
+# 30-50% of the key's brightness, same color temp. Job is to prevent harsh
+# shadows on the far side of the face without competing with the key.
+elgato-key-light-air-yyyy.local 40 5000
+
+# Add more lights below as needed. Extra pattern lights, back lights, etc.
+# all use the same API — they're all just Elgato Key Lights to the script.

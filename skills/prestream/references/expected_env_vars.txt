@@ -1,0 +1,8 @@
+# Environment variables the prestream check should verify are set.
+# One variable name per line. Lines starting with # are ignored.
+# Leave empty if you don't use API-key-based auth for streaming yet.
+#
+# Examples (uncomment or add as you configure providers):
+# ANTHROPIC_API_KEY
+# OPENAI_API_KEY
+# GEMINI_API_KEY
