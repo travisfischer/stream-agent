@@ -70,6 +70,8 @@ The skill is built and tested against the stack below. Yours can differ — see 
 
 → [`docs/obs-scenes.md`](docs/obs-scenes.md) — build the OBS scene collection (Starting Soon / Main / Camera / BRB / Ending) and configure webcam with color crop/scale filters.
 
+→ [`docs/scene-wallpaper.md`](docs/scene-wallpaper.md) — generate a desktop wallpaper that visually marks your OBS stream zone and camera-PiP cutout (streamer-only alignment guide).
+
 → [`docs/alternatives.md`](docs/alternatives.md) — swap options for hardware, software, streaming platforms, and secrets managers.
 
 ## Repo structure
@@ -93,10 +95,13 @@ stream-agent/
 │           ├── lights.conf.example      # template for your lights
 │           ├── expected_env_vars.txt    # list of env vars to verify set
 │           └── op_refs.txt              # list of 1Password refs to verify
-└── docs/
-    ├── setup.md                # detailed setup guide
-    ├── alternatives.md         # swap options for different stacks
-    └── obs-scenes.md           # OBS scene-by-scene walkthrough
+├── docs/
+│   ├── setup.md                # detailed setup guide
+│   ├── alternatives.md         # swap options for different stacks
+│   ├── obs-scenes.md           # OBS scene-by-scene walkthrough
+│   └── scene-wallpaper.md      # streamer-only alignment wallpaper
+└── tools/
+    └── generate_scene_wallpaper.py  # build the wallpaper for your setup
 ```
 
 ## Potential future directions
