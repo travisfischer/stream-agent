@@ -39,6 +39,8 @@ Optionally, a fourth bottom source of a solid color or a wallpaper-style image f
 
 If you tweak crop values, the Transform Size fields auto-adjust to reflect the post-filter dimensions. Re-enter your desired display size after each crop change.
 
+**Optional polish — scene-frame wallpaper.** If you use Display Capture (not Window Capture) and want a visible-only-to-you guide showing exactly where the stream zone and camera PiP land, see [`scene-wallpaper.md`](scene-wallpaper.md). The generator produces a wallpaper aligned to the values above and prints the matching OBS Crop/Pad filter to apply.
+
 **Window Capture caveat:** macOS Screen Capture sources target a specific window by title. If you quit and reopen that app, OBS will re-find it by name — usually OK, but double-check before going live. For safety, prefer **Window** mode over **Display** mode; Display mode captures everything on that monitor including notifications.
 
 ## Scene 3: Camera
